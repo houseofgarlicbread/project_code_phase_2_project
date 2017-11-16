@@ -1,0 +1,146 @@
+.jumbotron {
+    background-image: url("../img/flushing_meadows_corona_park.jpg");
+    margin-bottom: 0;
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    background-size: cover;
+    position: relative;
+} 
+.words_in_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align:center;
+    width: 100%
+}
+
+h1 span { 
+   color: #F0EAD6; /*eggshell white */
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+
+h1 span.spacer {
+   padding:0 5px;
+}
+
+h2 span { 
+   color: #F0EAD6; /*eggshell white */ 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+
+h2 span.spacer {
+   padding:0 5px;
+}
+
+.lead span { 
+   color: #F0EAD6; /*eggshell white */ 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; /*black transparency surrounding "Welcome to Queens: Your Guide to the Best of Queens" */
+}
+
+.lead span.spacer {
+   padding:0 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+nav ul {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* style.js*/
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:17px;
+  line-height:1.6;
+}
+
+.button{
+  background: #D3D3D3; /*light grey */
+  padding:1em 2em;
+  color:#fff;
+  border:0;
+}
+
+.button:hover{
+  background:#333;
+}
+
+.modal{
+  display:none;
+  position: fixed;
+  z-index:1;
+  left: 0;
+  top:0;
+  height: 100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+  background-color:#D3D3D3; /*light grey screen behind modal popup*/
+  margin: 20% auto;
+  width:70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name:modalopen;
+  animation-duration:1s;
+}
+
+
+.modal-header h2, .modal-footer h3{
+  margin:0;
+}
+
+/*.modal-header{
+  background:coral;
+  padding:15px;
+  color:#fff;
+}
+*/
+.modal-body{
+  padding:10px 20px;
+}
+
+/* .modal-footer{
+  background:coral;
+  padding:10px;
+  color:#fff;
+  text-align: center;
+}
+*/
+.closeBtn{
+  color:#ccc;
+  float: right;
+  font-size:30px;
+  color:#fff;
+}
+
+.closeBtn:hover,.closeBtn:focus{
+  color:#000;
+  text-decoration: none;
+  cursor:pointer;
+}
+
+@keyframes modalopen{
+  from{ opacity: 0}
+  to {opacity: 1}
+}

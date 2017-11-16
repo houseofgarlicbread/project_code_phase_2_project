@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title> </title>
+    <script src="bootstrap.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+    
+      <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <!--navigation bar-->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="img/lotus.png" class="lotus"></img></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="places.html">Places</a>
+        <a class="nav-item nav-link" href="culture.html">Culture</a>
+        <a class="nav-item nav-link active" href="food.html">Food</a>
+        <a class="nav-item nav-link" href="contact_us.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+<body>
+
+  <!--grid responsiveness-->
+<!--  <div style ="margin: 20px;">
+    <span>Layout: </span>
+    <a href="#" class="stack">Stack</a>
+    <a href="#" class="grid">Grid</a>
+  </div>
+  
+  <!--culture/history/adults-->
+  
+  <!--culture 1-->
+<!-- <section id="blocks">
+    <article>
+      <h2>Astoria Seafood</h2>
+        <img src="img/fish.jpg" alt="fish" style ="height: 300px; width: 400px; margin: 20px 20px;"></img>
+        <p>Family-owned, counter-serve, BYOB seafood market with create-your-own eats in busy, old-school digs.</p>
+          <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.4186596486775!2d-73.81909818534368!3d40.75281574305576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2603fbebd682b%3A0xbf191efa40922499!2sTemple+Canteen!5e0!3m2!1sen!2sus!4v1510439539973" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+ <!-- <p>3710 33rd St, Long Island City, NY 11101</p>
+  <p>astoriaseafood.net</p>
+  <p>(718) 392-2680</p>
+    </article>
+    
+     <!--culture 2-->
+<!--    <article>
+      <h2>Jade Asian Restaurant</h2>
+        <img src="img/dim_sum.jpg" alt="tea" style ="height: 300px; width: 400px; margin: 20px 20px;"></img>
+        <p>Sprawling, lively dim sum palace serving classic Chinese fare via rolling carts.</p>
+          <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9818142892277!2d-73.7867803845942!3d40.74042567932884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c261b0e8f9ba5f%3A0x1f6df05c566d6fdf!2sWonder+World+Reality!5e0!3m2!1sen!2sus!4v1510273874690" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--  <p>136-28 39th Ave, Flushing, NY 11354</p>
+  <p>jadeasianrestaurant.com</p>
+  <p>(718) 762-8821</p>
+    </article>
+    
+    <!--culture 3-->
+<!--        <article>
+      <h2>Manor Delicatessen</h2>
+        <img src="img/sandwich.jpg" alt="sandwich" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Venerable storefront offering hearty, hot/cold sandwiches, salads & soups along with daily specials.</p>
+          <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.093295800093!2d-73.85295518459554!3d40.69394287933395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25dfcf8a626f7%3A0x1373dc05c31953af!2sManor+Delicatessen!5e0!3m2!1sen!2sus!4v1510466110575" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--  <p>136-20 38th Avenue, 2nd Floor, Flushing, NY 11354</p>
+  <p>springshabu.com</p>
+  <p>(718) 395-8076</p>
+    </article>
+    
+    <!--culture 4-->
+<!--        <article>
+      <h2>El Gauchito</h2>
+        <img src="img/steak.jpg" alt="steak" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Modest Argentinean eatery offering classic dishes & an on-site butcher shop with imported products.</p>
+          <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.4709037171197!2d-73.84393994882785!3d40.751666443023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2607fc18af129%3A0xa32774e794320499!2sFlushing+Meadows+Golf+Center!5e0!3m2!1sen!2sus!4v1510273929778" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--  <p>94-60 Corona Ave, Elmhurst, NY 11373</p>
+  <p>elgauchitonyc.com</p>
+  <p>(718) 271-1917</p>
+    </article>
+    
+    <!--culture 5-->
+ <!--       <article>
+      <h2>Spring Shabu-Shabu</h2>
+        <img src="img/hot_pot.jpg" alt="hot pot" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Meats, seafood, noodles & veggies are cooked in tableside hot pots at this stylish Japanese outfit.</p>
+          <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.4709037171197!2d-73.84393994882785!3d40.751666443023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2607fc18af129%3A0xa32774e794320499!2sFlushing+Meadows+Golf+Center!5e0!3m2!1sen!2sus!4v1510273929778" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+ <!-- <p>136-20 38th Avenue, 2nd Floor, Flushing, NY 11354</p>
+  <p>springshabu.com</p>
+  <p>(718) 395-8076</p>
+    </article>
+    
+    <!--culture 6-->
+<!--    <article>
+      <h2>Jamaican Flavors</h2>
+        <img src="img/jerk_pork.jpg" alt="jerk pork" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Everyday Jamaican fare & cakes served in a basic, snug space with counter service.</p>
+   <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.048921069807!2d-73.84351668516685!3d40.73894904390448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2607f44d4b055%3A0x7f2283100fcca46c!2sWheel+Fun+Rentals!5e0!3m2!1sen!2sus!4v1510427926910" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--  <p>16417 Jamaica Ave, Jamaica, NY 11432</p>
+  <p>no website</p>
+  </p>(718) 526-2228</p>
+    </article>
+  
+    <!--culture 7 -->
+<!--    <article>
+      <h2>Marani</h2>
+        <img src="img/kebab_salad.jpg" alt="kebab salad" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Tranquil location offering classic kosher Georgian specialties alongside unique cocktails & wine.</p>
+   <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.048921069807!2d-73.84351668516685!3d40.73894904390448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2607f44d4b055%3A0x7f2283100fcca46c!2sWheel+Fun+Rentals!5e0!3m2!1sen!2sus!4v1510427926910" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--  <p>97-26 63rd Rd, Rego Park, NY 11374</p>
+  <p>maraninyc.com</p>
+  <p>(718) 569-0600</p>
+    </article>
+    
+    <!--culture 8 -->
+<!--    <article>
+      <h2>Sik Gaek</h2>
+        <img src="img/octopus_live.jpg" alt="octopus live" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Fresh seafood, some still wriggling in the pot, like live octopus, is the draw at this no-frills Korean restaurant.</p>
+   <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.048921069807!2d-73.84351668516685!3d40.73894904390448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2607f44d4b055%3A0x7f2283100fcca46c!2sWheel+Fun+Rentals!5e0!3m2!1sen!2sus!4v1510427926910" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--  <p>161 Crocheron Ave, Flushing, NY 11358</p>
+  <p>sikgaekflushing.com</p>
+  </p>(718) 321-7770</p>
+    </article>
+  
+    <!--culture 9 -->
+<!--    <article>
+      <h2>Areperia Arepa Lady</h2>
+        <img src="img/arepa.jpg" alt="arepa" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Brick-&-mortar outpost of a popular food cart known for turning out South American cornmeal cakes.</p>
+  <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.685738632512!2d-73.89070088459395!3d40.7469400793282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25fa9f985239f%3A0x862a2e490df0c1ee!2sArepa+Lady!5e0!3m2!1sen!2sus!4v1510470852689" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!-- <p>77-02 Roosevelt Ave, Queens, NY 11373</p>
+ <p>arepalady.net</p>
+ <p>(347) 730-6124</p>
+  </article>
+  
+      <!--culture 10 -->
+<!--    <article>
+      <h2>Maharaja Sweets</h2>
+        <img src="img/indian_dessert.jpg" alt="indian dessert" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Indian bakery known for its Indian desserts and vegetarian snacks.</p>
+  <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6097198221646!2d-73.9509373851666!3d40.74861254331282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25927c411edc5%3A0x59ed14c2ffcc7b2b!2sThe+Cliffs+at+LIC!5e0!3m2!1sen!2sus!4v1510434206221" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--<p>7310 37th Ave, Jackson Heights, NY 11372</p>
+<p>maharajasweets.com</p>
+<p>(718) 505-2680</p>
+  </article>
+  </section>
+  </section>
+  
+  <script>
+    $("a.stack").on("click", function() {
+     $("article").addClass("stack"); 
+    });
+     $("a.grid").on("click", function() {
+     $("article").removeClass("stack"); 
+    });
+  </script>
+  
+</section>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script>
+      </script>
+  
+<div class="card text-center">
+  <div class="card-header">
+    Featured Food in Queens
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">Spring Shabu-Shabu</h4>
+    <img class="card-img-top" src="img/hotpot5.jpg" alt="hot pot">
+      <p class="card-text">Enjoy cooking individual meals in tableside hot pots with the whole family.</p>
+      <p class="card-text">Address: 136-20 38th Avenue, 2nd Floor, Flushing, NY 11354</p>
+      <p class="card-text">Website: springshabu.com</p>
+      <p class="card-text">Phone Number: (718) 395-8076</p> 
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"This place is a haven for vegetarians." - The NYPL Circular</small>
+    </div>
+  </div>
+  </div>
+</div>
+
+  <!--grid responsiveness-->
+<!--
+  <div style ="margin: 20px;">
+    <span>Layout: </span>
+    <a href="#" class="stack">Stack</a>
+    <a href="#" class="grid">Grid</a>
+  </div>
+-->
+
+  <!--places-->
+     
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="img/fish.jpg" alt="fish">
+    <div class="card-body">
+      <h4 class="card-title">Astoria Seafood</h4>
+      <p class="card-text">Get some fresh seafood, and support this family-owned, seafood market as they prepare your meal.</p>
+      <p class="card-text">Address: 42-11 Broadway, Astoria, NY 11103</p>
+      <p class="card-text">Website: thegeekeryhq.com</p>
+      <p class="card-text">Phone Number: (718) 606-2853</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"Very old school, but can't beat the freshness." - Anna</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/dim_sum.jpg" alt="tea">
+    <div class="card-body">
+      <h4 class="card-title">Jade Asian Restaurant</h4>
+      <p class="card-text">Excellent dim sum palace serving traditional Chinese dishes.</p>
+      <p class="card-text">Address: 136-28 39th Ave, Flushing, NY 11354</p>
+      <p class="card-text">Website: jadeasianrestaurant.com</p>
+      <p class="card-text">Phone Number: (718) 762-8821</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"I come here all the time." - Blair</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/cuban_sandwich.jpg" alt="sandwich">
+    <div class="card-body">
+      <h4 class="card-title">Manor Delicatessen</h4>
+      <p class="card-text">This classic deli serves the works -sandwiches, salads and soups.</p>
+      <p class="card-text">Address: 136-20 38th Avenue, 2nd Floor, Flushing, NY 11354</p>
+      <p class="card-text">Website: springshabu.com</p>
+      <p class="card-text">Phone Number: (718) 395-8076</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"This place is a staple in the neighborhood." - Conner</small>
+    </div>
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="img/steak_cut.jpg" alt="steak">
+    <div class="card-body">
+      <h4 class="card-title">El Gauchito</h4>
+      <p class="card-text">Get some classic Argentinean dishes and don't forget to stop by the butcher shop.</p>
+      <p class="card-text">Address: 94-60 Corona Ave, Elmhurst, NY 11373</p>
+      <p class="card-text">Website: elgauchitonyc.com</p>
+      <p class="card-text">Phone Number: (718) 271-1917</p>
+      </div>
+    <div class="card-footer">
+      <small class="text-muted">"The steaks are lovely." -Dana</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/jerk_pork.jpg" alt="jerk pork">
+    <div class="card-body">
+      <h4 class="card-title">Jamaican Flavors</h4>
+      <p class="card-text">Jamaican classics are served in this counter service establishment.</p>
+      <p class="card-text">Address: 16417 Jamaica Ave, Jamaica, NY 11432</p>
+      <p class="card-text">Website: no website</p>
+      <p class="card-text">Phone Number: (718) 526-222</p> 
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"This place has really good jerk chicken like how mom makes it." -Eddie</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/kebab_salad.jpg" alt="kebab salad">
+    <div class="card-body">
+      <h4 class="card-title">Marani</h4>
+      <p class="card-text">Try the kosher Georgian specialties and don't forget the wine.</p>
+      <p class="card-text">Address: 97-26 63rd Rd, Rego Park, NY 11374</p>
+      <p class="card-text">Website: maraninyc.com</p>
+      <p class="card-text">Phone Number: (718) 569-0600</p> 
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"I love the kebabs." -Fanny</small>
+    </div>
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="img/octopus2.jpg" alt="octopus live">
+    <div class="card-body">
+      <h4 class="card-title">Sik Gaek</h4>
+	  <p class="card-text">Fresh seafood, like live octopus, is the main attraction to this Korean restaurant.</p>
+      <p class="card-text">Address: 161 Crocheron Ave, Flushing, NY 11358</p>
+      <p class="card-text">Website: sikgaekflushing.com</p>
+      <p class="card-text">Phone Number: (718) 321-7770</p> 
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"Like no other experience." -Gina</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/arepa2.jpg" alt="arepa">
+    <div class="card-body">
+      <h4 class="card-title">Areperia Arepa Lady</h4>
+      <p class="card-text">From food cart to brick-&-mortar, try the popular South American cornmeal cakes.</p>
+      <p class="card-text">Address: 77-02 Roosevelt Ave, Queens, NY 11373</p>
+      <p class="card-text">Website: arepalady.net</p>
+      <p class="card-text">Phone Number: (347) 730-6124</p> 
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"My friends and I love coming here" -Havana</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/indian_sweets2.jpg" alt="indian dessert">
+    <div class="card-body">
+      <h4 class="card-title">Maharaja Sweets</h4>
+      <p class="card-text">Indian bakery known for its authentic desserts and vegetarian snacks.</p>
+      <p class="card-text">Address: 7310 37th Ave, Jackson Heights, NY 11372</p>
+      <p class="card-text">Website: maharajasweets.com</p>
+      <p class="card-text">Phone Number: (718) 505-2680</p>  
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"I always order from here for special occasions." -Theo</small>
+    </div>
+  </div>
+  </div>
+  
+  <div class="footer text-center mt-5">
+    <h4>Queens Hotspot</h4>
+    <p>987 Bell Avenue<br> Astoria, New York</p>
+    <p>helloqueens@qhs.com</p>
+  </div>
+  
+  </div>
+  
+</body>
+
+</html>

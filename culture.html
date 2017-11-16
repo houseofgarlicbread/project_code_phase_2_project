@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title> </title>
+    <script src="bootstrap.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+    
+      <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  <!--navigation bar-->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="img/lotus.png" class="lotus"></img></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="places.html">Places</a>
+        <a class="nav-item nav-link active" href="culture.html">Culture</a>
+        <a class="nav-item nav-link" href="food.html">Food</a>
+        <a class="nav-item nav-link" href="contact_us.html">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+<body>
+
+  <!--grid responsiveness-->
+<!--  <div style ="margin: 20px;">
+    <span>Layout: </span>
+    <a href="#" class="stack">Stack</a>
+    <a href="#" class="grid">Grid</a>
+  </div>
+  
+  <!--culture/history/adults-->
+  
+      <!--culture 1/place 7 -->
+<!--  <section id="blocks">
+    <article>
+      <h2>Turkish Cultural Center Queens</h2>
+        <img src="img/ebru_painting.jpg" alt="ebru painting" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Learn ebru art (water marbling) painting at the non-profit organization, Turkish Cultural Center, as well as other educational and fun classes focusing on Turkish heritage.</p>
+  <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.838548983828!2d-73.92159368459409!3d40.74357797932852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ed96815cdc5%3A0xc17f5f8ab7d2ad7d!2sTurkish+Cultural+Center+Queens!5e0!3m2!1sen!2sus!4v1510427773244" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+ <!-- <p>43-49 45th St, Sunnyside, NY 11104</p>
+  <p>turkishculturalcenter.org</p>
+  <p>(718) 482-8263</p>
+    </article>
+    
+    <!--culture 2-->
+ <!--   <article>
+      <h2>Ganesh Temple Canteen</h2>
+        <img src="img/indian_food.jpg" alt="indian food" style ="height: 300px; width: 400px; margin: 20px 20px;"></img>
+        <p>Causal and authentic South Indian food served cafeteria-style in the basement of a Hindu temple.</p>
+          <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.4186596486775!2d-73.81909818534368!3d40.75281574305576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2603fbebd682b%3A0xbf191efa40922499!2sTemple+Canteen!5e0!3m2!1sen!2sus!4v1510439539973" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--  <p>45-57 Bowne St, Flushing, NY 11355</p>
+  <p>nyganeshtemplecanteen.com</p>
+  <p>(718) 460-8484</p>
+    </article>
+    
+     <!--culture 3-->
+<!--    <article>
+      <h2>Fang Gourmet Tea</h2>
+        <img src="img/tea.jpg" alt="tea" style ="height: 300px; width: 400px; margin: 20px 20px;"></img>
+        <p>Broad wooden tables & cabinets accent this Chinese teahouse & shop offering traditional ceremonies.</p>
+          <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9818142892277!2d-73.7867803845942!3d40.74042567932884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c261b0e8f9ba5f%3A0x1f6df05c566d6fdf!2sWonder+World+Reality!5e0!3m2!1sen!2sus!4v1510273874690" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+ <!-- <p>135-25 Roosevelt Ave, Flushing, NY 11354</p>
+  <p>fangtea.com</p>
+  <p>(888) 888-0216</p>
+    </article>
+    
+    <!--culture 4-->
+<!--    <article>
+      <h2>Queens Museum</h2>
+        <img src="img/queens_museum.jpg" alt="Queens Museum" style ="height: 300px; width: 400px; margin: 20px 20px;"></img>
+        <p>Visual arts on display along with The Panorama, a building-for-building model of New York City.</p>
+          <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.3854185730634!2d-73.9171178845931!3d40.77554017932505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f5d2f1e5635%3A0x1751102de210bda4!2sQ.E.D.!5e0!3m2!1sen!2sus!4v1510438323634" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--  <p>New York City Building, Corona, NY 11368 (Located in: Flushing Meadows Corona Park)</p>
+  <p>queensmuseum.org</p>
+  <p>(718) 592-9700</p>
+    </article>
+    
+    <!--culture 5-->
+<!--    <article>
+      <h2>Indoor Extreme Sports Paintball & Laser Tag</h2>
+        <img src="img/paint.jpg" alt="paint" style ="height: 300px; width: 400px; margin: 20px 20px;"></img>
+        <p>For a more action packed gaming experience, Indoor Extreme Sports Paintball & Laser Tag, is an indoor recreational center that has virtual reality gaming, laser tag, paintball, and archery tag.</p>
+    <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.8988564904676!2d-73.93605648516683!3d40.742251043702225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ed36e8c0eb1%3A0xf912aae6332e504a!2sIndoor+Extreme+Sports+Paintball+%26+Laser+Tag!5e0!3m2!1sen!2sus!4v1510427849337" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--  <p>47-11 Van Dam St, Long Island City, NY 11101</p>
+  <p>indoorextremesports.com</p>
+  <p>(718) 361-9152</p>
+    </article>
+    
+    <!--culture 6-->
+ <!--   <article>
+      <h2>Woodside Fencing Center (WFC)</h2>
+        <img src="img/fencing.jpg" alt="fencing" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Learn how to fence at this fencing center that's been around since 1986.</p>
+        <!-- Map Begins -->
+ <!-- <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.655459665304!2d-73.90837408516666!3d40.74760624337437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f1c23c18c47%3A0x6e5cc9992d476438!2sWoodside+Fencing+Center+Inc!5e0!3m2!1sen!2sus!4v1510290253278" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+ <!-- <p>3911 57th St, Woodside, NY 11377</p>
+  <p>woodsidefencing.com</p>
+  <p>(718) 478-5946</p>
+    </article>
+  
+    <!--culture 7 -->
+ <!--   <article>
+      <h2>Turkish Cultural Center Queens</h2>
+        <img src="img/ebru_painting.jpg" alt="ebru painting" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Learn ebru art (water marbling) painting at the non-profit organization, Turkish Cultural Center, as well as other educational and fun classes focusing on Turkish heritage.</p>
+  <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.838548983828!2d-73.92159368459409!3d40.74357797932852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ed96815cdc5%3A0xc17f5f8ab7d2ad7d!2sTurkish+Cultural+Center+Queens!5e0!3m2!1sen!2sus!4v1510427773244" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--  <p>43-49 45th St, Sunnyside, NY 11104</p>
+  <p>turkishculturalcenter.org</p>
+  <p>(718) 482-8263</p>
+    </article>
+    
+    <!--culture 8 -->
+ <!--   <article>
+      <h2>City Ice Pavilion</h2>
+        <img src="img/ice_skating.jpg" alt="ice skating" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Learn ice skating and hockey in City Ice Pavilion's large indoor ice skating rink.</p>
+  <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9337451022643!2d-73.9355840845941!3d40.74148337932871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25ed30a37cc29%3A0x80a26a8cc62f2aa5!2sCity+Ice+Pavilion!5e0!3m2!1sen!2sus!4v1510429369722" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--<p>47-32 32nd Pl, Long Island City, NY 11101</p>
+<p>cityicepavilion.com</p>
+<p>(718) 706-6667</p>
+  </article>
+  
+    <!--culture 9 -->
+<!--    <article>
+      <h2>The Potter’s Wheel</h2>
+        <img src="img/pottery.jpg" alt="pottery" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Both a store and studio, The Potter's Wheel offers hand building and wheel throwing classes, and workshops in raku, sculpture, and other glazing techniques.</p>
+  <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.4232154945294!2d-73.83349208459508!3d40.70869897933227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c260a4a7183c39%3A0xa717d083553fc72d!2sThe+Potter%E2%80%99s+Wheel!5e0!3m2!1sen!2sus!4v1510432546749" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!--<p>120-33 83rd Ave, Kew Gardens, NY 11415</p>
+<p>potterswheelny.com</p>
+<p>(718) 441-6614</p>
+  </article>
+  
+      <!--culture 10 -->
+<!--    <article>
+      <h2>The Cliffs at LIC</h2>
+        <img src="img/climbing.jpg" alt="climbing" style ="height: 300px; width: 400px; margin: 20px 20px;">
+        <p>Learn how to boulder, toprope, and lead climb at the indoor climbing gym, The Cliffs at LIC.</p>
+  <!-- Map Begins -->
+<!--  <div class="map">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6097198221646!2d-73.9509373851666!3d40.74861254331282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25927c411edc5%3A0x59ed14c2ffcc7b2b!2sThe+Cliffs+at+LIC!5e0!3m2!1sen!2sus!4v1510434206221" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map Ends -->
+<!-- <p>11-11 44th Dr, Long Island City, NY 11101</p>
+<p>lic.thecliffsclimbing.com</p>
+<p>(718) 729-7625</p>
+  </article>
+  </section>
+  </section>
+  
+  <script>
+    $("a.stack").on("click", function() {
+     $("article").addClass("stack"); 
+    });
+     $("a.grid").on("click", function() {
+     $("article").removeClass("stack"); 
+    });
+  </script>
+  
+</section>
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+      <script>
+      </script>
+  
+<div class="card text-center">
+  <div class="card-header">
+    Featured Cultural or Historical Place in Queens
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">Fang Gourmet Tea</h4>
+    <img class="card-img-top" src="img/chinese_tea_ceremony.jpg" alt="tea">
+      <p class="card-text">Visit this Chinese teahouse experience one of their traditional tea ceremonies.</p>
+      <p class="card-text">Address: 135-25 Roosevelt Ave, Flushing, NY 11354</p>
+      <p class="card-text">Website: fangtea.com</p>
+      <p class="card-text">Phone Number: (888) 888-0216</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"A great way to spend the afternoon." - The NYPL Daily</small>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="img/greek_dancing2.jpg" alt="Greek dancing">
+    <div class="card-body">
+      <h4 class="card-title">Dance Classes at The Greek American Folklore Society</h4>
+      <p class="card-text">Learn authentic traditional dances from all regions of Greece at this non-profit organization.</p>
+      <p class="card-text">Address: 43-49 45th St, Sunnyside, NY 11104</p>
+      <p class="card-text">Website: greekamericanfolkloresociety.org/dance-classes</p>
+      <p class="card-text">Phone Number: (718) 956-3544</p> 
+    </div>
+    <div class="card-footer">
+     <small class="text-muted">"They do a great job in preserving Greek culture." - Anne</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/hindu_temple_stock.jpg" alt="temple">
+    <div class="card-body">
+      <h4 class="card-title">Ganesh Temple Canteen</h4>
+      <p class="card-text">Visit the Hindu temple and stay for the causal and authentic South Indian food.</p>
+      <p class="card-text">Address: 22-51 29th St, Astoria, NY 11105</p>
+      <p class="card-text">Website: nyganeshtemplecanteen.com</p>
+      <p class="card-text">Phone Number: (718) 460-8484</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"The temple is really nice and the food they serve is awesome and budget-friendly." - Barney</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/henna_designer.jpg" alt="henna designer">
+    <div class="card-body">
+      <h4 class="card-title">Mehndi by Monika</h4>
+      <p class="card-text">For great henna artistry, contact Monika.</p>
+      <p class="card-text">Address: Bellerose, Queens, NY 11426</p>
+      <p class="card-text">Website: mehndibymonika.com</p>
+      <p class="card-text">Phone Number: (917) 478-0035</p> 
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"Monika did a great job for my wedding." - Fatima</small>
+    </div>
+  </div>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="img/ebru_art.jpg" alt="ebru painting">
+    <div class="card-body">
+      <h4 class="card-title">Turkish Cultural Center Queens</h4>
+      <p class="card-text">Learn ebru art (water marbling) painting, and don't forget to check out the other educational and fun classes focusing on Turkish heritage.</p>
+      <p class="card-text">Address: 43-49 45th St, Sunnyside, NY 11104</p>
+      <p class="card-text">Website: nyganeshtemplecanteen.com</p>
+      <p class="card-text">Phone Number: (718) 592-9700</p> 
+      </div>
+    <div class="card-footer">
+      <small class="text-muted">"The instructor was great and the everyone had a good time." -David</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/indian_saree.jpg" alt="Indian Saree">
+    <div class="card-body">
+      <h4 class="card-title">India Sari Palace</h4>
+      <p class="card-text">A variety of colorful saris line the walls at this emporium for traditional South Asian clothing.</p>
+      <p class="card-text">Address: 3707 74th St, Jackson Heights, NY 11372</p>
+      <p class="card-text">Website: no website</p>
+      <p class="card-text">Phone Number: (718) 426-2700</p> 
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"This place had exactly what I needed for an upcoming wedding." -Elsa</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/john_bowne_house.jpg" alt="John Bowne House">
+    <div class="card-body">
+      <h4 class="card-title">John Bowne House, Queens (1661) </h4>
+      <p class="card-text">This historic home is known for its role in establishing religious tolerance.</p>
+      <p class="card-text">Address: 37-01 Bowne St, Flushing, NY 11354</p>
+      <p class="card-text">Website: bownehouse.org</p>
+      <p class="card-text">Phone Number: (718) 359-0528</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"A hidden treasure." -Franklin</small>
+    </div>
+  </div>
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="img/dancing_kids.jpg" alt="dancing kids">
+    <div class="card-body">
+      <h4 class="card-title">This 400 seat theater hosts a range of shows, including fashion shows and film festivals.</h4>
+	  <p class="card-text">153-10 Jamaica Ave, Jamaica, NY 11432</p>
+      <p class="card-text">Address: 153-10 Jamaica Ave, Jamaica, NY 11432</p>
+      <p class="card-text">Website: www.jcal.org/jpac</p>
+      <p class="card-text">Phone Number: (718) 618-6170</p> 
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"My kids love this place." -Gavin</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/karaoke.jpg" alt="karaoke">
+    <div class="card-body">
+      <h4 class="card-title">The Real KTV</h4>
+      <p class="card-text">With a mix of Chinese and English songs, sing your heart out at this karoke bar.</p>
+      <p class="card-text">Address: 136-20 Roosevelt Ave, Flushing, NY 11354</p>
+      <p class="card-text">Website: facebook.com/The-Real-KTV-1579455325667756/</p>
+      <p class="card-text">Phone Number: (347) 730-6124</p> 
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"The prices are reasonable and it's at a convenient location" -Homer</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/queens_museum3.jpg" alt="Queens Museum">
+    <div class="card-body">
+      <h4 class="card-title">Queens Museum</h4>
+      <p class="card-text">Known for The Panorama, a very detailed model of New York City, the Queens Museum has an assortment of beautiful artwork.</p>
+      <p class="card-text">Address: New York City Building, Corona, NY 11368 (Located in: Flushing Meadows Corona Park)</p>
+      <p class="card-text">Website: queensmuseum.org</p>
+      <p class="card-text">Phone Number: (718) 482-8263</p> 
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">"I was really impressed with The Panorma." -Iris</small>
+    </div>
+  </div>
+  </div>
+</div>
+  
+   <div class="footer text-center mt-5">
+    <h4>Queens Hotspot</h4>
+    <p>987 Bell Avenue<br> Astoria, New York</p>
+    <p>helloqueens@qhs.com</p>
+  </div>
+  
+  </div>
+  
+</body>
+
+</html>
